@@ -41,7 +41,7 @@ export function New() {
   async function createNewHabit() {
     try {
       if (!title.trim() || weekDays.length === 0)
-        Alert.alert(
+        return Alert.alert(
           'Novo hábito',
           'Informe o comprometimento e escolha a recorrência'
         );
